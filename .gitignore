@@ -13,3 +13,7 @@ ci/node-b/node-b.pub
 ci/node-b/node-a.pub
 tools/kms
 tools/mock
+bob_secure_storage/
+/img
+/bob_secure_storage
+top_secret_project.txt

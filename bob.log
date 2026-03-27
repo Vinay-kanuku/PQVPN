@@ -1,0 +1,39 @@
+nohup: ignoring input
+=== Arnika Configuration ===
+Arnika Mode:              AtLeastQkdRequired
+Arnika Interval:          10s
+Arnika ID:                9998
+Arnika Listen Address:    127.0.0.1:9998
+Arnika Peer Address:      127.0.0.1:9999
+KMS URL:                  http://localhost:8080/api/v1/keys/CONSB
+KMS HTTP Timeout:         10s
+KMS Backoff Max Retries:  5
+KMS Backoff Base Delay:   100ms
+KMS Retry Interval:       5s
+Client Certificate:       (not configured)
+Private Key:              (not configured)
+CA Certificate:           (not configured)
+PQC key provider:        DISABLED
+WireGuard Interface:      wg1
+WireGuard Peer PublicKey: 9KOGnoloZDb1k5Tx8yXTqahK/v05FloIYu5mWdLwpRQ=
+============================
+2026/02/13 09:56:22.022852 [INFO] MASTER[9998] [REQ] request QKD key from http://localhost:8080/api/v1/keys/CONSB
+2026/02/13 09:56:22.023049 [INFO] ARNIKA[9998] TCP server started on 127.0.0.1:9998
+2026/02/13 09:56:22.024116 [INFO] MASTER[9998] [SND] send key_id ffffffff-d112-4bf2-bc4e-269398d0466f to 127.0.0.1:9999
+2026/02/13 09:56:22.024192 [INFO] BACKUP[9998] [REQ] request QKD key for key_id ffffffff-078d-4df5-8211-aab824b83b24 from http://localhost:8080/api/v1/keys/CONSB
+2026/02/13 09:56:22.024240 [INFO] BACKUP[9998] [RCV] received key_id ffffffff-078d-4df5-8211-aab824b83b24 from 127.0.0.1:53692
+2026/02/13 09:56:22.024393 [INFO] MASTER[9998] [OK] PSK configured on WireGuard interface: wg1 for peer: 9KOGnoloZDb1k5Tx8yXTqahK/v05FloIYu5mWdLwpRQ=
+2026/02/13 09:56:22.024537 [INFO] BACKUP[9998] [OK] PSK configured on WireGuard interface: wg1 for peer: 9KOGnoloZDb1k5Tx8yXTqahK/v05FloIYu5mWdLwpRQ=
+2026/02/13 09:56:42.024503 [INFO] MASTER[9998] [REQ] request QKD key from http://localhost:8080/api/v1/keys/CONSB
+2026/02/13 09:56:42.024896 [INFO] MASTER[9998] [SND] send key_id ffffffff-5537-476e-8a0f-82231eec7bfc to 127.0.0.1:9999
+2026/02/13 09:56:42.025252 [INFO] BACKUP[9998] [REQ] request QKD key for key_id ffffffff-6da2-4cb6-b25e-c28985ea8371 from http://localhost:8080/api/v1/keys/CONSB
+2026/02/13 09:56:42.025276 [INFO] BACKUP[9998] [RCV] received key_id ffffffff-6da2-4cb6-b25e-c28985ea8371 from 127.0.0.1:33842
+2026/02/13 09:56:42.025414 [INFO] MASTER[9998] [OK] PSK configured on WireGuard interface: wg1 for peer: 9KOGnoloZDb1k5Tx8yXTqahK/v05FloIYu5mWdLwpRQ=
+2026/02/13 09:56:42.025663 [INFO] BACKUP[9998] [OK] PSK configured on WireGuard interface: wg1 for peer: 9KOGnoloZDb1k5Tx8yXTqahK/v05FloIYu5mWdLwpRQ=
+2026/02/13 09:57:02.025042 [INFO] MASTER[9998] [REQ] request QKD key from http://localhost:8080/api/v1/keys/CONSB
+2026/02/13 09:57:02.025552 [INFO] MASTER[9998] [SND] send key_id ffffffff-6004-49f9-af47-1243cb3f892f to 127.0.0.1:9999
+2026/02/13 09:57:02.025961 [INFO] BACKUP[9998] [REQ] request QKD key for key_id ffffffff-0c3a-4375-b270-ab52448d33a5 from http://localhost:8080/api/v1/keys/CONSB
+2026/02/13 09:57:02.025985 [INFO] BACKUP[9998] [RCV] received key_id ffffffff-0c3a-4375-b270-ab52448d33a5 from 127.0.0.1:42870
+2026/02/13 09:57:02.026052 [INFO] MASTER[9998] [OK] PSK configured on WireGuard interface: wg1 for peer: 9KOGnoloZDb1k5Tx8yXTqahK/v05FloIYu5mWdLwpRQ=
+2026/02/13 09:57:02.026355 [INFO] BACKUP[9998] [OK] PSK configured on WireGuard interface: wg1 for peer: 9KOGnoloZDb1k5Tx8yXTqahK/v05FloIYu5mWdLwpRQ=
+2026/02/13 09:57:11.208954 [INFO] ARNIKA[9998] TCP server shutdown triggered on 127.0.0.1:9998

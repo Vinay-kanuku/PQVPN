@@ -1,0 +1,22 @@
+2026/02/13 09:56:20 ======== QKD KMS Simulator ========
+2026/02/13 09:56:20 [CONF] listening on port:8080
+2026/02/13 09:56:20 [CONF] supported key size=256
+2026/02/13 09:56:20 [CONF] supported key number=1
+2026/02/13 09:56:20 [CONF] available SAE:
+2026/02/13 09:56:20 [CONF]  /api/v1/keys/CONSA/enc_keys
+2026/02/13 09:56:20 [CONF]  /api/v1/keys/CONSA/dec_keys
+2026/02/13 09:56:20 [CONF]  /api/v1/keys/CONSB/enc_keys
+2026/02/13 09:56:20 [CONF]  /api/v1/keys/CONSB/dec_keys
+2026/02/13 09:56:20 ===================================
+2026/02/13 09:56:22 [INFO] [200] GET /api/v1/keys/CONSA/enc_keys from [::1]:45822
+2026/02/13 09:56:22 [INFO] [200] GET /api/v1/keys/CONSB/enc_keys from [::1]:45834
+2026/02/13 09:56:22 [INFO] [200] GET /api/v1/keys/CONSB/dec_keys?key_ID=ffffffff-078d-4df5-8211-aab824b83b24 from [::1]:45834
+2026/02/13 09:56:22 [INFO] [200] GET /api/v1/keys/CONSA/dec_keys?key_ID=ffffffff-d112-4bf2-bc4e-269398d0466f from [::1]:45822
+2026/02/13 09:56:42 [INFO] [200] GET /api/v1/keys/CONSB/enc_keys from [::1]:45834
+2026/02/13 09:56:42 [INFO] [200] GET /api/v1/keys/CONSA/enc_keys from [::1]:45822
+2026/02/13 09:56:42 [INFO] [200] GET /api/v1/keys/CONSB/dec_keys?key_ID=ffffffff-6da2-4cb6-b25e-c28985ea8371 from [::1]:45834
+2026/02/13 09:56:42 [INFO] [200] GET /api/v1/keys/CONSA/dec_keys?key_ID=ffffffff-5537-476e-8a0f-82231eec7bfc from [::1]:45822
+2026/02/13 09:57:02 [INFO] [200] GET /api/v1/keys/CONSB/enc_keys from [::1]:45834
+2026/02/13 09:57:02 [INFO] [200] GET /api/v1/keys/CONSA/enc_keys from [::1]:45822
+2026/02/13 09:57:02 [INFO] [200] GET /api/v1/keys/CONSA/dec_keys?key_ID=ffffffff-6004-49f9-af47-1243cb3f892f from [::1]:45822
+2026/02/13 09:57:02 [INFO] [200] GET /api/v1/keys/CONSB/dec_keys?key_ID=ffffffff-0c3a-4375-b270-ab52448d33a5 from [::1]:45834
