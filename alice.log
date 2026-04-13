@@ -1,4 +1,3 @@
-nohup: ignoring input
 === Arnika Configuration ===
 Arnika Mode:              AtLeastQkdRequired
 Arnika Interval:          10s
@@ -17,23 +16,136 @@ PQC key provider:        DISABLED
 WireGuard Interface:      wg0
 WireGuard Peer PublicKey: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
 ============================
-2026/02/13 09:56:22.022724 [INFO] MASTER[9999] [REQ] request QKD key from http://localhost:8080/api/v1/keys/CONSA
-2026/02/13 09:56:22.022941 [INFO] ARNIKA[9999] TCP server started on 127.0.0.1:9999
-2026/02/13 09:56:22.024063 [INFO] MASTER[9999] [SND] send key_id ffffffff-078d-4df5-8211-aab824b83b24 to 127.0.0.1:9998
-2026/02/13 09:56:22.024294 [INFO] MASTER[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
-2026/02/13 09:56:22.024322 [INFO] BACKUP[9999] [REQ] request QKD key for key_id ffffffff-d112-4bf2-bc4e-269398d0466f from http://localhost:8080/api/v1/keys/CONSA
-2026/02/13 09:56:22.024331 [INFO] BACKUP[9999] [RCV] received key_id ffffffff-d112-4bf2-bc4e-269398d0466f from 127.0.0.1:53856
-2026/02/13 09:56:22.024606 [INFO] BACKUP[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
-2026/02/13 09:56:42.024503 [INFO] MASTER[9999] [REQ] request QKD key from http://localhost:8080/api/v1/keys/CONSA
-2026/02/13 09:56:42.024988 [INFO] MASTER[9999] [SND] send key_id ffffffff-6da2-4cb6-b25e-c28985ea8371 to 127.0.0.1:9998
-2026/02/13 09:56:42.025304 [INFO] MASTER[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
-2026/02/13 09:56:42.025301 [INFO] BACKUP[9999] [RCV] received key_id ffffffff-5537-476e-8a0f-82231eec7bfc from 127.0.0.1:40430
-2026/02/13 09:56:42.025312 [INFO] BACKUP[9999] [REQ] request QKD key for key_id ffffffff-5537-476e-8a0f-82231eec7bfc from http://localhost:8080/api/v1/keys/CONSA
-2026/02/13 09:56:42.025605 [INFO] BACKUP[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
-2026/02/13 09:57:02.025042 [INFO] MASTER[9999] [REQ] request QKD key from http://localhost:8080/api/v1/keys/CONSA
-2026/02/13 09:57:02.025732 [INFO] MASTER[9999] [SND] send key_id ffffffff-0c3a-4375-b270-ab52448d33a5 to 127.0.0.1:9998
-2026/02/13 09:57:02.025959 [INFO] BACKUP[9999] [REQ] request QKD key for key_id ffffffff-6004-49f9-af47-1243cb3f892f from http://localhost:8080/api/v1/keys/CONSA
-2026/02/13 09:57:02.025976 [INFO] BACKUP[9999] [RCV] received key_id ffffffff-6004-49f9-af47-1243cb3f892f from 127.0.0.1:51476
-2026/02/13 09:57:02.026062 [INFO] MASTER[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
-2026/02/13 09:57:02.026355 [INFO] BACKUP[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
-2026/02/13 09:57:11.208809 [INFO] ARNIKA[9999] TCP server shutdown triggered on 127.0.0.1:9999
+2026/04/13 08:40:08.429385 [INFO] MASTER[9999] [REQ] request QKD key from http://localhost:8080/api/v1/keys/CONSA
+2026/04/13 08:40:08.429967 [INFO] ARNIKA[9999] TCP server started on 127.0.0.1:9999
+2026/04/13 08:40:08.431840 [INFO] MASTER[9999] [SND] send key_id ffffffff-fc0b-40c9-a842-34d146774404 to 127.0.0.1:9998
+2026/04/13 08:40:08.431856 [INFO] BACKUP[9999] [REQ] request QKD key for key_id ffffffff-d105-4a29-a84e-069a0fdac77a from http://localhost:8080/api/v1/keys/CONSA
+2026/04/13 08:40:08.431982 [INFO] BACKUP[9999] [RCV] received key_id ffffffff-d105-4a29-a84e-069a0fdac77a from 127.0.0.1:44482
+2026/04/13 08:40:08.432573 [INFO] MASTER[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
+2026/04/13 08:40:08.432995 [INFO] BACKUP[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
+2026/04/13 08:40:28.431200 [INFO] MASTER[9999] [REQ] request QKD key from http://localhost:8080/api/v1/keys/CONSA
+2026/04/13 08:40:28.431507 [INFO] BACKUP[9999] [REQ] request QKD key for key_id ffffffff-3c55-4f78-9ff0-9db0cbca8616 from http://localhost:8080/api/v1/keys/CONSA
+2026/04/13 08:40:28.431667 [INFO] BACKUP[9999] [RCV] received key_id ffffffff-3c55-4f78-9ff0-9db0cbca8616 from 127.0.0.1:55142
+2026/04/13 08:40:28.432055 [INFO] MASTER[9999] [SND] send key_id ffffffff-a920-48b6-8bca-31b8d4026949 to 127.0.0.1:9998
+2026/04/13 08:40:28.432816 [INFO] MASTER[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
+2026/04/13 08:40:28.433153 [INFO] BACKUP[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
+2026/04/13 08:40:48.431354 [INFO] MASTER[9999] [REQ] request QKD key from http://localhost:8080/api/v1/keys/CONSA
+2026/04/13 08:40:48.432711 [INFO] MASTER[9999] [SND] send key_id ffffffff-5a8c-4fe1-a129-3e9980bd5221 to 127.0.0.1:9998
+2026/04/13 08:40:48.432912 [INFO] BACKUP[9999] [REQ] request QKD key for key_id ffffffff-d5c1-4dff-bf82-cb5ce977617b from http://localhost:8080/api/v1/keys/CONSA
+2026/04/13 08:40:48.433023 [INFO] BACKUP[9999] [RCV] received key_id ffffffff-d5c1-4dff-bf82-cb5ce977617b from 127.0.0.1:46318
+2026/04/13 08:40:48.433581 [INFO] MASTER[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
+2026/04/13 08:40:48.433853 [INFO] BACKUP[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
+2026/04/13 08:41:08.433061 [INFO] MASTER[9999] [REQ] request QKD key from http://localhost:8080/api/v1/keys/CONSA
+2026/04/13 08:41:08.434241 [INFO] MASTER[9999] [SND] send key_id ffffffff-b2d7-4870-93df-5a60dad36de7 to 127.0.0.1:9998
+2026/04/13 08:41:08.434734 [INFO] BACKUP[9999] [REQ] request QKD key for key_id ffffffff-67a2-464c-a40e-cc172ceec943 from http://localhost:8080/api/v1/keys/CONSA
+2026/04/13 08:41:08.434760 [INFO] BACKUP[9999] [RCV] received key_id ffffffff-67a2-464c-a40e-cc172ceec943 from 127.0.0.1:39374
+2026/04/13 08:41:08.435218 [INFO] MASTER[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
+2026/04/13 08:41:08.436005 [INFO] BACKUP[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
+2026/04/13 08:41:28.434258 [INFO] MASTER[9999] [REQ] request QKD key from http://localhost:8080/api/v1/keys/CONSA
+2026/04/13 08:41:28.435567 [INFO] MASTER[9999] [SND] send key_id ffffffff-4a24-4e22-a04a-8c3811f7913f to 127.0.0.1:9998
+2026/04/13 08:41:28.436058 [INFO] BACKUP[9999] [REQ] request QKD key for key_id ffffffff-fb66-4160-9759-bd447c0dc36a from http://localhost:8080/api/v1/keys/CONSA
+2026/04/13 08:41:28.436133 [INFO] BACKUP[9999] [RCV] received key_id ffffffff-fb66-4160-9759-bd447c0dc36a from 127.0.0.1:52884
+2026/04/13 08:41:28.436266 [INFO] MASTER[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
+2026/04/13 08:41:28.437122 [INFO] BACKUP[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
+2026/04/13 08:41:48.435406 [INFO] MASTER[9999] [REQ] request QKD key from http://localhost:8080/api/v1/keys/CONSA
+2026/04/13 08:41:48.436511 [INFO] MASTER[9999] [SND] send key_id ffffffff-6874-4f71-ac69-0768a72e0bd2 to 127.0.0.1:9998
+2026/04/13 08:41:48.437621 [INFO] BACKUP[9999] [REQ] request QKD key for key_id ffffffff-7b56-48d9-b240-7d83c07411b3 from http://localhost:8080/api/v1/keys/CONSA
+2026/04/13 08:41:48.437693 [INFO] BACKUP[9999] [RCV] received key_id ffffffff-7b56-48d9-b240-7d83c07411b3 from 127.0.0.1:36740
+2026/04/13 08:41:48.438156 [INFO] MASTER[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
+2026/04/13 08:41:48.438445 [INFO] BACKUP[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
+2026/04/13 08:42:08.437285 [INFO] MASTER[9999] [REQ] request QKD key from http://localhost:8080/api/v1/keys/CONSA
+2026/04/13 08:42:08.438391 [INFO] MASTER[9999] [SND] send key_id ffffffff-46a4-47c4-b8dc-7de0ad6b80ce to 127.0.0.1:9998
+2026/04/13 08:42:08.438556 [INFO] BACKUP[9999] [REQ] request QKD key for key_id ffffffff-4095-45a4-98e4-d3b14df194de from http://localhost:8080/api/v1/keys/CONSA
+2026/04/13 08:42:08.438557 [INFO] BACKUP[9999] [RCV] received key_id ffffffff-4095-45a4-98e4-d3b14df194de from 127.0.0.1:60018
+2026/04/13 08:42:08.439740 [INFO] BACKUP[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
+2026/04/13 08:42:08.439875 [INFO] MASTER[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
+2026/04/13 08:42:28.438419 [INFO] MASTER[9999] [REQ] request QKD key from http://localhost:8080/api/v1/keys/CONSA
+2026/04/13 08:42:28.439126 [INFO] MASTER[9999] [SND] send key_id ffffffff-ed9b-4e0d-bdde-4b375faef9dd to 127.0.0.1:9998
+2026/04/13 08:42:28.439208 [INFO] BACKUP[9999] [RCV] received key_id ffffffff-8664-4191-a20f-ffb2b3836358 from 127.0.0.1:49466
+2026/04/13 08:42:28.439118 [INFO] BACKUP[9999] [REQ] request QKD key for key_id ffffffff-8664-4191-a20f-ffb2b3836358 from http://localhost:8080/api/v1/keys/CONSA
+2026/04/13 08:42:28.439824 [INFO] MASTER[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
+2026/04/13 08:42:28.440026 [INFO] BACKUP[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
+2026/04/13 08:42:48.439102 [INFO] MASTER[9999] [REQ] request QKD key from http://localhost:8080/api/v1/keys/CONSA
+2026/04/13 08:42:48.439855 [INFO] MASTER[9999] [SND] send key_id ffffffff-40cd-4248-93fe-01c98c9c1ac3 to 127.0.0.1:9998
+2026/04/13 08:42:48.440359 [INFO] BACKUP[9999] [REQ] request QKD key for key_id ffffffff-f176-432a-9637-a5340edbcdd9 from http://localhost:8080/api/v1/keys/CONSA
+2026/04/13 08:42:48.440359 [INFO] BACKUP[9999] [RCV] received key_id ffffffff-f176-432a-9637-a5340edbcdd9 from 127.0.0.1:53010
+2026/04/13 08:42:48.441351 [INFO] MASTER[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
+2026/04/13 08:42:48.441514 [INFO] BACKUP[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
+2026/04/13 08:43:08.440603 [INFO] MASTER[9999] [REQ] request QKD key from http://localhost:8080/api/v1/keys/CONSA
+2026/04/13 08:43:08.441422 [INFO] BACKUP[9999] [RCV] received key_id ffffffff-299e-4377-9a6f-82b5d02de287 from 127.0.0.1:40962
+2026/04/13 08:43:08.441548 [INFO] BACKUP[9999] [REQ] request QKD key for key_id ffffffff-299e-4377-9a6f-82b5d02de287 from http://localhost:8080/api/v1/keys/CONSA
+2026/04/13 08:43:08.441653 [INFO] MASTER[9999] [SND] send key_id ffffffff-b66f-4790-922e-540a7909fe5f to 127.0.0.1:9998
+2026/04/13 08:43:08.442314 [INFO] MASTER[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
+2026/04/13 08:43:08.442517 [INFO] BACKUP[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
+2026/04/13 08:43:28.441912 [INFO] MASTER[9999] [REQ] request QKD key from http://localhost:8080/api/v1/keys/CONSA
+2026/04/13 08:43:28.442191 [INFO] BACKUP[9999] [REQ] request QKD key for key_id ffffffff-c886-4d96-86ca-a18096127f1c from http://localhost:8080/api/v1/keys/CONSA
+2026/04/13 08:43:28.442242 [INFO] BACKUP[9999] [RCV] received key_id ffffffff-c886-4d96-86ca-a18096127f1c from 127.0.0.1:51308
+2026/04/13 08:43:28.442397 [INFO] MASTER[9999] [SND] send key_id ffffffff-b7e7-4e08-b962-e141bb26209c to 127.0.0.1:9998
+2026/04/13 08:43:28.442733 [INFO] BACKUP[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
+2026/04/13 08:43:28.442802 [INFO] MASTER[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
+2026/04/13 08:43:48.443329 [INFO] MASTER[9999] [REQ] request QKD key from http://localhost:8080/api/v1/keys/CONSA
+2026/04/13 08:43:48.444547 [INFO] MASTER[9999] [SND] send key_id ffffffff-fa29-4d15-81ea-ed8e28bf56bd to 127.0.0.1:9998
+2026/04/13 08:43:48.444957 [INFO] BACKUP[9999] [RCV] received key_id ffffffff-9e40-47bd-a6f4-d1bd587975f3 from 127.0.0.1:54930
+2026/04/13 08:43:48.444938 [INFO] BACKUP[9999] [REQ] request QKD key for key_id ffffffff-9e40-47bd-a6f4-d1bd587975f3 from http://localhost:8080/api/v1/keys/CONSA
+2026/04/13 08:43:48.445777 [INFO] MASTER[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
+2026/04/13 08:43:48.446180 [INFO] BACKUP[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
+2026/04/13 08:44:08.444381 [INFO] MASTER[9999] [REQ] request QKD key from http://localhost:8080/api/v1/keys/CONSA
+2026/04/13 08:44:08.445125 [INFO] MASTER[9999] [SND] send key_id ffffffff-48a0-43de-bafb-9694815c0ee1 to 127.0.0.1:9998
+2026/04/13 08:44:08.445450 [INFO] BACKUP[9999] [RCV] received key_id ffffffff-df3a-49ff-8a1e-0a378b4d5824 from 127.0.0.1:35500
+2026/04/13 08:44:08.445544 [INFO] BACKUP[9999] [REQ] request QKD key for key_id ffffffff-df3a-49ff-8a1e-0a378b4d5824 from http://localhost:8080/api/v1/keys/CONSA
+2026/04/13 08:44:08.445697 [INFO] MASTER[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
+2026/04/13 08:44:08.446378 [INFO] BACKUP[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
+2026/04/13 08:44:28.445043 [INFO] MASTER[9999] [REQ] request QKD key from http://localhost:8080/api/v1/keys/CONSA
+2026/04/13 08:44:28.446099 [INFO] MASTER[9999] [SND] send key_id ffffffff-a5ed-4b9b-a367-abeed9dee58d to 127.0.0.1:9998
+2026/04/13 08:44:28.447283 [INFO] BACKUP[9999] [REQ] request QKD key for key_id ffffffff-d1cb-4cf1-a96f-123bd8e721d4 from http://localhost:8080/api/v1/keys/CONSA
+2026/04/13 08:44:28.447308 [INFO] MASTER[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
+2026/04/13 08:44:28.447301 [INFO] BACKUP[9999] [RCV] received key_id ffffffff-d1cb-4cf1-a96f-123bd8e721d4 from 127.0.0.1:51864
+2026/04/13 08:44:28.448106 [INFO] BACKUP[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
+2026/04/13 08:44:48.446306 [INFO] MASTER[9999] [REQ] request QKD key from http://localhost:8080/api/v1/keys/CONSA
+2026/04/13 08:44:48.447700 [INFO] MASTER[9999] [SND] send key_id ffffffff-da5f-42fd-8ba2-4037b0c14c61 to 127.0.0.1:9998
+2026/04/13 08:44:48.448865 [INFO] MASTER[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
+2026/04/13 08:44:48.449507 [INFO] BACKUP[9999] [REQ] request QKD key for key_id ffffffff-357a-44d3-ae1f-b1fdbdd9e72e from http://localhost:8080/api/v1/keys/CONSA
+2026/04/13 08:44:48.449653 [INFO] BACKUP[9999] [RCV] received key_id ffffffff-357a-44d3-ae1f-b1fdbdd9e72e from 127.0.0.1:35430
+2026/04/13 08:44:48.450609 [INFO] BACKUP[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
+2026/04/13 08:45:08.447851 [INFO] MASTER[9999] [REQ] request QKD key from http://localhost:8080/api/v1/keys/CONSA
+2026/04/13 08:45:08.448540 [INFO] MASTER[9999] [SND] send key_id ffffffff-5e3f-4e19-9d21-c7ec228d7d83 to 127.0.0.1:9998
+2026/04/13 08:45:08.449661 [INFO] MASTER[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
+2026/04/13 08:45:08.449909 [INFO] BACKUP[9999] [RCV] received key_id ffffffff-c20a-492b-ba07-6323f7eca888 from 127.0.0.1:48548
+2026/04/13 08:45:08.449975 [INFO] BACKUP[9999] [REQ] request QKD key for key_id ffffffff-c20a-492b-ba07-6323f7eca888 from http://localhost:8080/api/v1/keys/CONSA
+2026/04/13 08:45:08.450677 [INFO] BACKUP[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
+2026/04/13 08:45:28.449293 [INFO] MASTER[9999] [REQ] request QKD key from http://localhost:8080/api/v1/keys/CONSA
+2026/04/13 08:45:28.450153 [INFO] MASTER[9999] [SND] send key_id ffffffff-7a5e-47e9-9cec-600218e51b5a to 127.0.0.1:9998
+2026/04/13 08:45:28.450872 [INFO] MASTER[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
+2026/04/13 08:45:28.451492 [INFO] BACKUP[9999] [REQ] request QKD key for key_id ffffffff-9c3e-4921-bbba-12b6833bcf58 from http://localhost:8080/api/v1/keys/CONSA
+2026/04/13 08:45:28.451555 [INFO] BACKUP[9999] [RCV] received key_id ffffffff-9c3e-4921-bbba-12b6833bcf58 from 127.0.0.1:58422
+2026/04/13 08:45:28.452109 [INFO] BACKUP[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
+2026/04/13 08:45:48.450503 [INFO] MASTER[9999] [REQ] request QKD key from http://localhost:8080/api/v1/keys/CONSA
+2026/04/13 08:45:48.452064 [INFO] MASTER[9999] [SND] send key_id ffffffff-6525-47ef-82b3-6b60aac52107 to 127.0.0.1:9998
+2026/04/13 08:45:48.453258 [INFO] MASTER[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
+2026/04/13 08:45:48.453423 [INFO] BACKUP[9999] [REQ] request QKD key for key_id ffffffff-f33d-4058-b23b-6088f54e7e0a from http://localhost:8080/api/v1/keys/CONSA
+2026/04/13 08:45:48.453617 [INFO] BACKUP[9999] [RCV] received key_id ffffffff-f33d-4058-b23b-6088f54e7e0a from 127.0.0.1:42484
+2026/04/13 08:45:48.454748 [INFO] BACKUP[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
+2026/04/13 08:46:08.452220 [INFO] MASTER[9999] [REQ] request QKD key from http://localhost:8080/api/v1/keys/CONSA
+2026/04/13 08:46:08.452951 [INFO] MASTER[9999] [SND] send key_id ffffffff-cc22-420f-b3d4-2388ed0f2368 to 127.0.0.1:9998
+2026/04/13 08:46:08.453351 [INFO] BACKUP[9999] [REQ] request QKD key for key_id ffffffff-f661-4992-b851-66138e177da6 from http://localhost:8080/api/v1/keys/CONSA
+2026/04/13 08:46:08.453347 [INFO] BACKUP[9999] [RCV] received key_id ffffffff-f661-4992-b851-66138e177da6 from 127.0.0.1:38526
+2026/04/13 08:46:08.453462 [INFO] MASTER[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
+2026/04/13 08:46:08.453915 [INFO] BACKUP[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
+2026/04/13 08:46:28.452935 [INFO] MASTER[9999] [REQ] request QKD key from http://localhost:8080/api/v1/keys/CONSA
+2026/04/13 08:46:28.454238 [INFO] MASTER[9999] [SND] send key_id ffffffff-7050-4931-9e3a-e848aaa4fbc7 to 127.0.0.1:9998
+2026/04/13 08:46:28.455499 [INFO] MASTER[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
+2026/04/13 08:46:28.455743 [INFO] BACKUP[9999] [REQ] request QKD key for key_id ffffffff-826d-41d2-9535-cc8ba4637d41 from http://localhost:8080/api/v1/keys/CONSA
+2026/04/13 08:46:28.455845 [INFO] BACKUP[9999] [RCV] received key_id ffffffff-826d-41d2-9535-cc8ba4637d41 from 127.0.0.1:37450
+2026/04/13 08:46:28.456621 [INFO] BACKUP[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
+2026/04/13 08:46:48.454290 [INFO] MASTER[9999] [REQ] request QKD key from http://localhost:8080/api/v1/keys/CONSA
+2026/04/13 08:46:48.455641 [INFO] MASTER[9999] [SND] send key_id ffffffff-7b3f-4628-ab8f-5c76c3326d9a to 127.0.0.1:9998
+2026/04/13 08:46:48.456187 [INFO] BACKUP[9999] [REQ] request QKD key for key_id ffffffff-f5a2-4c46-b54a-e9b0eeaa7c2d from http://localhost:8080/api/v1/keys/CONSA
+2026/04/13 08:46:48.456213 [INFO] BACKUP[9999] [RCV] received key_id ffffffff-f5a2-4c46-b54a-e9b0eeaa7c2d from 127.0.0.1:51660
+2026/04/13 08:46:48.456667 [INFO] MASTER[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
+2026/04/13 08:46:48.457322 [INFO] BACKUP[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
+2026/04/13 08:47:08.455668 [INFO] MASTER[9999] [REQ] request QKD key from http://localhost:8080/api/v1/keys/CONSA
+2026/04/13 08:47:08.456177 [INFO] BACKUP[9999] [RCV] received key_id ffffffff-29c1-48e2-a1af-03abea8ca2eb from 127.0.0.1:38512
+2026/04/13 08:47:08.456207 [INFO] BACKUP[9999] [REQ] request QKD key for key_id ffffffff-29c1-48e2-a1af-03abea8ca2eb from http://localhost:8080/api/v1/keys/CONSA
+2026/04/13 08:47:08.456381 [INFO] MASTER[9999] [SND] send key_id ffffffff-d8bf-4192-8016-0e30642e7a07 to 127.0.0.1:9998
+2026/04/13 08:47:08.456982 [INFO] BACKUP[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=
+2026/04/13 08:47:08.457079 [INFO] MASTER[9999] [OK] PSK configured on WireGuard interface: wg0 for peer: yfJp6iGwLECj1Ni+XgTR2jUPpLNt+HyWhafefISxMgg=

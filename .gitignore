@@ -17,3 +17,17 @@ bob_secure_storage/
 /img
 /bob_secure_storage
 top_secret_project.txt
+/data
+/uploads
+.ruff_cache
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.tmp
+*.bak
+*.swp
+vpn_env/
+.venv/
+*.log
