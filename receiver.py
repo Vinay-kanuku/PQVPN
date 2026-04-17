@@ -1,9 +1,16 @@
 from flask import Flask, render_template, jsonify, request, send_from_directory
-import os, datetime
+import os, datetime, socket, threading
+import time
+from discovery import PeerDiscovery
 
 app = Flask(__name__)
 app.config["STORAGE"] = "bob_secure_storage"
 os.makedirs(app.config["STORAGE"], exist_ok=True)
+
+DEVICE_NAME = "Bob-" + socket.gethostname()[:8]
+
+discovery = PeerDiscovery(name=DEVICE_NAME, port=9000)
+discovery.start()
 
 
 @app.route("/")
@@ -36,6 +43,22 @@ def files():
     return jsonify(flist)
 
 
+@app.route("/api/status")
+def status():
+    return jsonify(
+        {
+            "device_name": DEVICE_NAME,
+            "files_count": len(
+                [
+                    f
+                    for f in os.listdir(app.config["STORAGE"])
+                    if os.path.isfile(os.path.join(app.config["STORAGE"], f))
+                ]
+            ),
+        }
+    )
+
+
 @app.route("/download/<path:filename>")
 def download(filename):
     return send_from_directory(app.config["STORAGE"], filename, as_attachment=True)
@@ -47,5 +70,11 @@ def view_file(filename):
 
 
 if __name__ == "__main__":
-    print("Receiver: http://localhost:9000")
+    print("=" * 60)
+    print("🔐 Arnika Receiver - Post-Quantum Secure")
+    print("=" * 60)
+    print(f"Device: {DEVICE_NAME}")
+    print(f"Receiver: http://localhost:9000")
+    print(f"Status: Broadcasting on network (UDP port 9999)")
+    print("=" * 60)
     app.run(host="0.0.0.0", port=9000, debug=True)

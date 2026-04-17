@@ -1,30 +1,30 @@
-2026/04/13 08:49:29 ======== QKD KMS Simulator ========
-2026/04/13 08:49:29 [CONF] listening on port:8080
-2026/04/13 08:49:29 [CONF] supported key size=256
-2026/04/13 08:49:29 [CONF] supported key number=1
-2026/04/13 08:49:29 [CONF] available SAE:
-2026/04/13 08:49:29 [CONF]  /api/v1/keys/CONSA/enc_keys
-2026/04/13 08:49:29 [CONF]  /api/v1/keys/CONSA/dec_keys
-2026/04/13 08:49:29 [CONF]  /api/v1/keys/CONSB/enc_keys
-2026/04/13 08:49:29 [CONF]  /api/v1/keys/CONSB/dec_keys
-2026/04/13 08:49:29 ===================================
-2026/04/13 08:49:31 [INFO] [200] GET /api/v1/keys/CONSA/enc_keys from [::1]:39782
-2026/04/13 08:49:31 [INFO] [200] GET /api/v1/keys/CONSB/enc_keys from [::1]:39794
-2026/04/13 08:49:31 [INFO] [200] GET /api/v1/keys/CONSB/dec_keys?key_ID=ffffffff-1660-44b9-bcd0-825ae66d05b4 from [::1]:39794
-2026/04/13 08:49:31 [INFO] [200] GET /api/v1/keys/CONSA/dec_keys?key_ID=ffffffff-681e-416f-ab9b-ded2c5b0ec11 from [::1]:39782
-2026/04/13 08:49:51 [INFO] [200] GET /api/v1/keys/CONSA/enc_keys from [::1]:39782
-2026/04/13 08:49:51 [INFO] [200] GET /api/v1/keys/CONSB/dec_keys?key_ID=ffffffff-4227-4b39-ad9f-eaa6412e9d1f from [::1]:39794
-2026/04/13 08:50:01 [INFO] [200] GET /api/v1/keys/CONSA/enc_keys from [::1]:39782
-2026/04/13 08:50:01 [INFO] [200] GET /api/v1/keys/CONSB/enc_keys from [::1]:39794
-2026/04/13 08:50:01 [INFO] [200] GET /api/v1/keys/CONSB/dec_keys?key_ID=ffffffff-8e12-4e36-b0c0-7a50c35f279b from [::1]:39794
-2026/04/13 08:50:01 [INFO] [200] GET /api/v1/keys/CONSA/dec_keys?key_ID=ffffffff-7da1-4dd6-894d-ff12ac0ae595 from [::1]:39782
-2026/04/13 08:50:21 [INFO] [200] GET /api/v1/keys/CONSA/enc_keys from [::1]:39782
-2026/04/13 08:50:21 [INFO] [200] GET /api/v1/keys/CONSB/enc_keys from [::1]:39794
-2026/04/13 08:50:21 [INFO] [200] GET /api/v1/keys/CONSB/dec_keys?key_ID=ffffffff-918f-4c0c-9771-f73d8f394f22 from [::1]:46920
-2026/04/13 08:50:21 [INFO] [200] GET /api/v1/keys/CONSA/dec_keys?key_ID=ffffffff-f56b-4dee-bccf-13ee479e4591 from [::1]:39782
-2026/04/13 08:50:41 [INFO] [200] GET /api/v1/keys/CONSA/enc_keys from [::1]:39782
-2026/04/13 08:50:41 [INFO] [200] GET /api/v1/keys/CONSB/enc_keys from [::1]:46920
-2026/04/13 08:50:41 [INFO] [200] GET /api/v1/keys/CONSB/dec_keys?key_ID=ffffffff-2fc0-4b94-a849-8bf855b6c4e2 from [::1]:39794
-2026/04/13 08:50:41 [INFO] [200] GET /api/v1/keys/CONSA/dec_keys?key_ID=ffffffff-713d-47e6-bc1c-a9ef18d7a0a6 from [::1]:39782
-2026/04/13 08:51:01 [INFO] [200] GET /api/v1/keys/CONSA/enc_keys from [::1]:39782
-2026/04/13 08:51:01 [INFO] [200] GET /api/v1/keys/CONSB/dec_keys?key_ID=ffffffff-9481-4faa-b6b8-2ae31d1d64ff from [::1]:39794
+2026/04/13 09:28:33 ======== QKD KMS Simulator ========
+2026/04/13 09:28:33 [CONF] listening on port:8080
+2026/04/13 09:28:33 [CONF] supported key size=256
+2026/04/13 09:28:33 [CONF] supported key number=1
+2026/04/13 09:28:33 [CONF] available SAE:
+2026/04/13 09:28:33 [CONF]  /api/v1/keys/CONSA/enc_keys
+2026/04/13 09:28:33 [CONF]  /api/v1/keys/CONSA/dec_keys
+2026/04/13 09:28:33 [CONF]  /api/v1/keys/CONSB/enc_keys
+2026/04/13 09:28:33 [CONF]  /api/v1/keys/CONSB/dec_keys
+2026/04/13 09:28:33 ===================================
+2026/04/13 09:28:35 [INFO] [200] GET /api/v1/keys/CONSB/enc_keys from [::1]:46946
+2026/04/13 09:28:35 [INFO] [200] GET /api/v1/keys/CONSA/enc_keys from [::1]:46958
+2026/04/13 09:28:35 [INFO] [200] GET /api/v1/keys/CONSA/dec_keys?key_ID=ffffffff-64f2-4bec-baf6-c239fa0b7c1b from [::1]:46958
+2026/04/13 09:28:35 [INFO] [200] GET /api/v1/keys/CONSB/dec_keys?key_ID=ffffffff-e27a-4809-877d-ad30b3eeaf58 from [::1]:46946
+2026/04/13 09:28:55 [INFO] [200] GET /api/v1/keys/CONSB/enc_keys from [::1]:46946
+2026/04/13 09:28:55 [INFO] [200] GET /api/v1/keys/CONSA/enc_keys from [::1]:46958
+2026/04/13 09:28:55 [INFO] [200] GET /api/v1/keys/CONSA/dec_keys?key_ID=ffffffff-74d2-4d4a-bd3b-8e6dd2a8484e from [::1]:46958
+2026/04/13 09:28:55 [INFO] [200] GET /api/v1/keys/CONSB/dec_keys?key_ID=ffffffff-956e-4847-b7b5-4b44d7ebfb43 from [::1]:46946
+2026/04/13 09:29:15 [INFO] [200] GET /api/v1/keys/CONSA/enc_keys from [::1]:46958
+2026/04/13 09:29:15 [INFO] [200] GET /api/v1/keys/CONSB/enc_keys from [::1]:46946
+2026/04/13 09:29:15 [INFO] [200] GET /api/v1/keys/CONSA/dec_keys?key_ID=ffffffff-73b0-4abd-98e4-f4b8b6750210 from [::1]:46958
+2026/04/13 09:29:15 [INFO] [200] GET /api/v1/keys/CONSB/dec_keys?key_ID=ffffffff-ab7b-4692-80f3-f7e9c0b1e0dc from [::1]:46946
+2026/04/13 09:29:35 [INFO] [200] GET /api/v1/keys/CONSB/enc_keys from [::1]:46946
+2026/04/13 09:29:35 [INFO] [200] GET /api/v1/keys/CONSA/enc_keys from [::1]:46958
+2026/04/13 09:29:35 [INFO] [200] GET /api/v1/keys/CONSB/dec_keys?key_ID=ffffffff-da0a-41d8-acfa-853c24f4e784 from [::1]:46946
+2026/04/13 09:29:35 [INFO] [200] GET /api/v1/keys/CONSA/dec_keys?key_ID=ffffffff-b02e-4aa4-ad67-1171be7e74c3 from [::1]:46958
+2026/04/13 09:29:55 [INFO] [200] GET /api/v1/keys/CONSA/enc_keys from [::1]:46958
+2026/04/13 09:29:55 [INFO] [200] GET /api/v1/keys/CONSB/enc_keys from [::1]:46946
+2026/04/13 09:29:55 [INFO] [200] GET /api/v1/keys/CONSB/dec_keys?key_ID=ffffffff-56a1-45d1-b6f7-49ee88d29b37 from [::1]:46946
+2026/04/13 09:29:55 [INFO] [200] GET /api/v1/keys/CONSA/dec_keys?key_ID=ffffffff-5783-4e6c-8bf5-2295fa88ce75 from [::1]:46958

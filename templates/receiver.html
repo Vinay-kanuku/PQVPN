@@ -81,6 +81,17 @@
             gap: 16px;
             margin-bottom: 20px;
         }
+        .device-info {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 8px 16px;
+            margin-bottom: 15px;
+            font-size: 13px;
+            color: #8b949e;
+            display: inline-block;
+        }
+        .device-info span { color: #58a6ff; }
         .security-info {
             background: #161b22;
             border: 1px solid #238636;
@@ -98,6 +109,8 @@
         <h1>📥 Arnika Receiver</h1>
         <div class="badge" id="count">0 files received</div>
     </div>
+    
+    <div class="device-info">Device: <span id="deviceName">Loading...</span></div>
     <p class="subtitle">Files received via quantum-secure VPN</p>
     
     <div class="security-info">
@@ -109,6 +122,14 @@
     </div>
 
     <script>
+        async function loadStatus() {
+            try {
+                const r = await fetch('/api/status');
+                const d = await r.json();
+                document.getElementById('deviceName').textContent = d.device_name || 'Unknown';
+            } catch (e) { console.error(e); }
+        }
+        
         function getIcon(filename) {
             const ext = '.' + filename.split('.').pop().toLowerCase();
             const icons = {
@@ -152,7 +173,8 @@
             }
         }
         
-        setInterval(loadFiles, 2000);
+        setInterval(() => { loadFiles(); loadStatus(); }, 2000);
+        loadStatus();
         loadFiles();
     </script>
 </body>

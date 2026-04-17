@@ -14,17 +14,28 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 40px;
+            padding: 30px;
         }
-        h1 { color: #58a6ff; margin-bottom: 5px; font-weight: 600; }
-        .subtitle { color: #8b949e; margin-bottom: 20px; font-size: 14px; }
+        h1 { color: #58a6ff; margin-bottom: 5px; font-weight: 600; font-size: 24px; }
+        .subtitle { color: #8b949e; margin-bottom: 15px; font-size: 14px; }
+        
+        .device-info {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 8px 16px;
+            margin-bottom: 15px;
+            font-size: 13px;
+            color: #8b949e;
+        }
+        .device-info span { color: #58a6ff; }
         
         .security-panel {
             background: #161b22;
             border: 1px solid #30363d;
             border-radius: 12px;
             padding: 16px 20px;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             width: 400px;
         }
         .security-panel h3 {
@@ -53,24 +64,82 @@
             border-radius: 20px;
             font-size: 14px;
             font-weight: 500;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
         .status.secure { background: #238636; color: #fff; }
         .status.insecure { background: #da3633; color: #fff; }
         .status.unknown { background: #6e7681; color: #fff; }
         
         .dot {
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background: currentColor;
-            animation: pulse 2s infinite;
+            width: 8px; height: 8px; border-radius: 50%;
+            background: currentColor; animation: pulse 2s infinite;
         }
         @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
         
+        .peers-section {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 15px;
+            width: 400px;
+        }
+        .peers-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        .peers-header h3 {
+            color: #58a6ff;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .scan-btn {
+            background: #1f6feb;
+            color: #fff;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+        .scan-btn:hover { background: #388bfd; }
+        
+        .peer-list { display: flex; flex-direction: column; gap: 8px; }
+        .peer-item {
+            background: #0d1117;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 10px 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .peer-item:hover { border-color: #58a6ff; }
+        .peer-item.selected { border-color: #238636; background: rgba(35,134,54,0.1); }
+        .peer-info { font-size: 13px; }
+        .peer-ip { color: #8b949e; font-size: 11px; }
+        .peer-status { font-size: 11px; color: #238636; }
+        
+        .no-peers { color: #8b949e; text-align: center; font-size: 13px; padding: 10px; }
+        
+        .target-display {
+            background: #238636;
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            margin-bottom: 15px;
+            display: none;
+        }
+        
         .upload-zone {
             width: 400px;
-            height: 150px;
+            height: 120px;
             border: 2px dashed #30363d;
             border-radius: 12px;
             display: flex;
@@ -90,80 +159,77 @@
         .btn {
             background: #238636;
             color: #fff;
-            padding: 12px 32px;
+            padding: 10px 24px;
             border: none;
             border-radius: 8px;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 500;
             cursor: pointer;
-            margin-top: 15px;
+            margin-top: 12px;
             transition: background 0.2s;
         }
         .btn:disabled { background: #6e7681; cursor: not-allowed; }
         .btn:hover:not(:disabled) { background: #2ea043; }
         
-        .file-list { width: 400px; margin-top: 20px; }
+        .file-list { width: 400px; margin-top: 15px; }
         .file-item {
             background: #161b22;
-            padding: 12px 16px;
+            padding: 10px 14px;
             border-radius: 8px;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             border: 1px solid #30363d;
         }
-        .file-info { font-size: 14px; }
-        .file-meta { color: #8b949e; font-size: 12px; margin-top: 4px; }
-        .file-status { font-size: 12px; color: #238636; }
-        .empty { color: #8b949e; text-align: center; padding: 20px; font-size: 14px; }
-
-        .lock-icon { font-size: 24px; }
+        .file-info { font-size: 13px; }
+        .file-meta { color: #8b949e; font-size: 11px; margin-top: 2px; }
+        .file-status { font-size: 11px; color: #238636; }
+        .empty { color: #8b949e; text-align: center; padding: 15px; font-size: 13px; }
     </style>
 </head>
 <body>
     <h1>📤 Arnika Sender</h1>
     <p class="subtitle">Post-Quantum Secure File Transfer</p>
     
+    <div class="device-info">
+        Device: <span id="deviceName">Loading...</span>
+    </div>
+    
     <div id="securityPanel" class="security-panel" style="display:none">
         <h3>🔐 Security Stack</h3>
-        <div class="security-row">
-            <span class="security-label">Key Exchange</span>
-            <span class="security-value" id="alg">-</span>
+        <div class="security-row"><span class="security-label">Key Exchange</span><span class="security-value" id="alg">-</span></div>
+        <div class="security-row"><span class="security-label">Tunnel</span><span class="security-value" id="tunnel">-</span></div>
+        <div class="security-row"><span class="security-label">PSK</span><span class="security-value" id="pskKey">-</span></div>
+        <div class="security-row"><span class="security-label">Protection</span><span class="security-value" id="protect">-</span></div>
+    </div>
+    
+    <div id="status" class="status unknown"><span class="dot"></span><span>Checking...</span></div>
+    
+    <div class="peers-section">
+        <div class="peers-header">
+            <h3>🌐 Available Peers</h3>
+            <button class="scan-btn" onclick="scanPeers()">🔄 Scan</button>
         </div>
-        <div class="security-row">
-            <span class="security-label">Tunnel</span>
-            <span class="security-value" id="tunnel">-</span>
-        </div>
-        <div class="security-row">
-            <span class="security-label">PSK</span>
-            <span class="security-value" id="pskKey">-</span>
-        </div>
-        <div class="security-row">
-            <span class="security-label">Protection</span>
-            <span class="security-value" id="protect">-</span>
+        <div id="peerList" class="peer-list">
+            <div class="no-peers">Scanning for devices...</div>
         </div>
     </div>
     
-    <div id="status" class="status unknown">
-        <span class="dot"></span>
-        <span>Checking...</span>
-    </div>
+    <div id="targetDisplay" class="target-display">Sending to: <span id="targetInfo"></span></div>
     
     <div id="uploadZone" class="upload-zone" onclick="if(!this.classList.contains('blocked'))document.getElementById('file').click()">
-        <div class="lock-icon" id="uploadIcon">📁</div>
-        <p id="uploadText">Click to upload file</p>
+        <p id="uploadText">Select a peer, then click to upload</p>
         <input type="file" id="file" onchange="uploadFile(this.files[0])">
     </div>
     
     <button class="btn" id="uploadBtn" onclick="document.getElementById('file').click()">Select File</button>
     
-    <div class="file-list" id="files">
-        <div class="empty">No files uploaded</div>
-    </div>
+    <div class="file-list" id="files"><div class="empty">No files uploaded</div></div>
 
     <script>
         let isSecure = false;
+        let selectedPeer = null;
         
         async function checkStatus() {
             try {
@@ -171,9 +237,10 @@
                 const d = await r.json();
                 isSecure = d.secure === true;
                 
+                document.getElementById('deviceName').textContent = d.device_name || 'Unknown';
+                
                 const s = document.getElementById('status');
                 const zone = document.getElementById('uploadZone');
-                const icon = document.getElementById('uploadIcon');
                 const text = document.getElementById('uploadText');
                 const btn = document.getElementById('uploadBtn');
                 const panel = document.getElementById('securityPanel');
@@ -182,70 +249,85 @@
                     s.className = 'status secure';
                     s.innerHTML = '<span class="dot"></span><span>Quantum Secure</span>';
                     zone.className = 'upload-zone secure';
-                    icon.textContent = '🔒';
-                    text.textContent = 'Secure - Click to upload';
-                    btn.disabled = false;
+                    text.textContent = selectedPeer ? 'Click to upload file' : 'Select a peer first';
+                    btn.disabled = !selectedPeer;
                     panel.style.display = 'block';
                     document.getElementById('alg').textContent = d.security_info.algorithm;
                     document.getElementById('tunnel').textContent = d.security_info.tunnel;
                     document.getElementById('pskKey').textContent = d.psk || 'Active';
                     document.getElementById('protect').textContent = d.security_info.protection;
-                } else if (d.secure === false) {
+                } else {
                     s.className = 'status insecure';
                     s.innerHTML = '<span class="dot"></span><span>Not Secure</span>';
                     zone.className = 'upload-zone blocked';
-                    icon.textContent = '🔓';
-                    text.textContent = 'Blocked - VPN not secure';
-                    btn.disabled = true;
-                    panel.style.display = 'none';
-                } else {
-                    s.className = 'status unknown';
-                    s.innerHTML = '<span class="dot"></span><span>Unknown</span>';
-                    zone.className = 'upload-zone';
-                    icon.textContent = '📁';
-                    text.textContent = 'Checking security...';
+                    text.textContent = 'VPN not secure - Upload blocked';
                     btn.disabled = true;
                     panel.style.display = 'none';
                 }
                 
+                renderPeers(d.peers || []);
+                
                 const list = document.getElementById('files');
                 if (d.files && d.files.length > 0) {
-                    list.innerHTML = d.files.map(f => `
-                        <div class="file-item">
-                            <div class="file-info">
-                                <div>${f.name}</div>
-                                <div class="file-meta">${(f.size / 1024).toFixed(1)} KB • ${f.time}</div>
-                            </div>
-                            <span class="file-status">✓ Sent via PSK</span>
-                        </div>
-                    `).join('');
+                    list.innerHTML = d.files.map(f => `<div class="file-item">
+                        <div class="file-info"><div>${f.name}</div><div class="file-meta">${(f.size/1024).toFixed(1)} KB • ${f.time}</div></div>
+                        <span class="file-status">✓ Sent</span>
+                    </div>`).join('');
                 } else {
                     list.innerHTML = '<div class="empty">No files uploaded</div>';
                 }
+            } catch (e) { console.error(e); }
+        }
+        
+        function renderPeers(peers) {
+            const list = document.getElementById('peerList');
+            if (peers.length === 0) {
+                list.innerHTML = '<div class="no-peers">No peers found. Click "Scan" to search.</div>';
+                return;
+            }
+            list.innerHTML = peers.map(p => `<div class="peer-item ${selectedPeer && selectedPeer.ip === p.ip ? 'selected' : ''}" onclick="selectPeer('${p.ip}', ${p.port}, '${p.name}')">
+                <div><div class="peer-info">${p.name}</div><div class="peer-ip">${p.ip}:${p.port}</div></div>
+                <span class="peer-status">${selectedPeer && selectedPeer.ip === p.ip ? '✓ Selected' : 'Click to select'}</span>
+            </div>`).join('');
+        }
+        
+        function selectPeer(ip, port, name) {
+            selectedPeer = {ip, port, name};
+            document.getElementById('targetDisplay').style.display = 'block';
+            document.getElementById('targetInfo').textContent = `${name} (${ip}:${port})`;
+            checkStatus();
+        }
+        
+        async function scanPeers() {
+            const list = document.getElementById('peerList');
+            list.innerHTML = '<div class="no-peers">Scanning...</div>';
+            try {
+                const r = await fetch('/api/scan');
+                const peers = await r.json();
+                renderPeers(peers);
             } catch (e) {
-                console.error(e);
+                list.innerHTML = '<div class="no-peers">Scan failed. Try again.</div>';
             }
         }
         
         async function uploadFile(file) {
-            if (!file || !isSecure) return;
+            if (!file || !isSecure || !selectedPeer) {
+                alert('Select a peer and ensure VPN is secure!');
+                return;
+            }
             const fd = new FormData();
             fd.append('file', file);
+            fd.append('target_ip', selectedPeer.ip);
+            fd.append('target_port', selectedPeer.port);
             try {
                 const r = await fetch('/upload', { method: 'POST', body: fd });
                 const d = await r.json();
-                if (d.success) {
-                    alert('✅ File sent via Quantum-Secure Tunnel!');
-                } else {
-                    alert('❌ ' + d.error);
-                }
-            } catch (e) {
-                alert('❌ ' + e);
-            }
+                alert(d.success ? `✅ File sent to ${selectedPeer.name}!` : '❌ ' + d.error);
+            } catch (e) { alert('❌ ' + e); }
             checkStatus();
         }
         
-        setInterval(checkStatus, 3000);
+        setInterval(() => { checkStatus(); scanPeers(); }, 3000);
         checkStatus();
     </script>
 </body>
